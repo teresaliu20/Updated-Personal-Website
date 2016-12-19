@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Teresa</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="contactStyle.css" type="text/css"/>
+		<link rel="icon" href="icon.png">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+
+	<body id="contactpage">
+
+		<img id="cornerlogo" src="whitelogo.png" style="width: 100px; height:80px ">
+		<header class="navbar">	
+			<nav><ul>
+				<li><a id="contact" href="contact.html">CONTACT</a></li>
+				<li><a href="projects.html">PROJECTS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="index.html">HOME</a></li>
+			</ul></nav>
+		</header>
+
+
+		<form method="post" name="myemailform" action="sendemail.php">
+			<p>
+				<label for='name'>NAME </label><br>
+				<input type="text" name="name">
+			</p>
+			<p>
+				<label for='email'>EMAIL ADDRESS</label><br>
+				<input type="text" name="email">
+			</p>
+			<p>
+				<label for='email'>SUBJECT</label><br>
+				<input type="text" name="subject">
+			</p>
+			<p>
+				<label for='message'>MESSAGE</label> <br>
+				<textarea name="message"></textarea>
+			</p>
+			<input type="submit" name='submit' value="submit">
+		</form>
+
+	</body>
+
+</html>
