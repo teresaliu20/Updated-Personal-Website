@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'simplifica';
+	src: url(simplifica.ttf) format('truetype');
+}
+
 body {
 	margin: 0;
 	background-position: center;
@@ -18,13 +23,20 @@ body {
 	background-image: url("img/coffee.jpeg");
 }
 
+#aboutpage {
+	background-image: url("img/sparks.jpeg");
+}
+
+#projectpage {
+	background-image: url("img/code.jpeg");
+}
+
 /* header navigation bar */
 .navbar nav {
 	height: 40px;
-
 }
 
-.navbar nav ul li {
+.navbar nav  li {
 	color: white;
 	list-style: none;
 	margin: 5px 25px 0px 0px;
@@ -46,6 +58,10 @@ body {
 	background-color: rgba(0,0,0,.6);
 	text-shadow: none;
 	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.navbar li.icon {
+	display: none;
 }
 
 #contact {
@@ -84,7 +100,7 @@ body {
 	width: 270px;
 	margin: auto;
 	display: block;
-	margin-top: 10%;
+	margin-top: 100px;
 }
 
 #logo {
@@ -92,27 +108,28 @@ body {
 }
 
 #hello {
-	margin: 3% auto 25% auto;
+	margin: 3% auto 400px auto;
 	width:32%;
 	letter-spacing: 3px;
 	text-align: center;
 	color: white;
 }
 
-#info {
+.info {
 	background-color: white;
 	color: black;
-	height: 400px;
-	padding: 10%;
+	height: 450px;
+	padding: 5% 10% 5% 10%;
 }
 
-#objective {
+.objective {
 	background-color: #EDEEEF;
 	padding: 50px 150px 50px 150px;
 }
 
 h1 {
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	font-size: 50px;
 }
 
 p {
@@ -120,6 +137,10 @@ p {
 	font-family: Avenir Next Condensed;
 }
 
+
+#infoAboutMe {
+	padding: 0 100px 0 100px;
+}
 
 /* footer div */
 
@@ -174,7 +195,7 @@ p {
 	margin-left: -35px;
 }
 
-.footernav nav ul li {
+.footernav nav  li {
 	color: white;
 	list-style: none;
 	display: inline-block;
@@ -184,7 +205,7 @@ p {
 	color: white;
 	display: inline-block;
 	padding: 10px 25px;
-	margin: 10px 35px;
+	margin: 5px 35px;
 	height: 18px;
 	font-size:20px;
 	letter-spacing: 4px;
@@ -206,7 +227,7 @@ p {
 }
 
 
-.footernav nav ul li {
+.footernav nav  li {
 	text-align: center;
 	margin: 0 auto;
 }
@@ -243,7 +264,137 @@ footer {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
+from, to { border-color: transparent }
+50% { border-color: black; }
 }
+
+.title {
+	color: white;
+	background-color: rgba(0,0,0,.8);
+	padding: 40px;
+	text-align: center;
+	font-size: 70px;
+	margin: 175px auto 325px auto;
+	width: 250px;
+	letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .objective .typewriter {
+    	display: none;
+    }
+    .info {
+    	height: 500px;
+    }
+    #infoAboutMe {
+		padding: 0 50px 0 50px;
+	}
+	.footernav nav a:link, .footernav nav a:visited {
+		margin: 5px 10px;
+	}
+	#hello {
+		font-size: 25px;
+		width: 400px;
+		animation: none;
+	}
+
+	/* about page media query */
+	#skills {
+		height: 300px;
+	}
+	#orgs {
+		height: 1300px;
+		text-align: center;
+	}
+	#orgs .imgBox {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+	}
+
+	#orgs .imgDescription {
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	#projects {
+		height: 80%;
+	}
+
+	#projects .imgDescription {
+		width: 200px;
+		text-align: center;
+		padding-left: 20px;
+	}
+
+	#projects .imgBox {
+		width: 230px;
+	}
+	#projects img {
+		margin-left: -5px;
+	}
+
+}
+
+/* contact page media query */
+@media only screen and (max-width: 1100px) {
+
+	#initialform {
+		display: none;
+	}
+
+	span #emailTitle{
+		font-size: 50px;
+		visibility: visible;
+		padding: 40px;
+		text-align: center;
+		font-size: 70px;
+		margin: 125px auto 325px auto;
+		width: 250px;
+		letter-spacing: 2px;
+		height: 200px;
+	}
+
+}
+
+@media only screen and (max-width: 680px) {
+
+    .objective .typewriter {
+    	display: none;
+    }
+    .objective {
+		background-color: #EDEEEF;
+		padding: 50px;
+	}
+	#infoAboutMe {
+		padding: 0 20px 0 20px;
+	}
+	.info {
+		height: 600px;
+	}
+
+	.footernav nav a:link, .footernav nav a:visited {
+		width: 100px;
+		margin: 10px 50px;
+	}
+	#question {
+		margin-top: 200px;
+	}
+	#cornerlogo {
+		display: none;
+	}
+
+	.navbar nav a:link, .navbar nav a:visited {
+		display: inline-block;
+		padding: 10px 10px;
+	}
+
+	/* about page media query */
+
+	#skills {
+		height: 350px;
+	}
+}
+
 

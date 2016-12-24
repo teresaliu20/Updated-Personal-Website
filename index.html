@@ -3,36 +3,35 @@
 	<head>
 		<title>Teresa</title>
 		<link rel="stylesheet" href="style.css" type="text/css"/>
-		<link rel="icon" href="icon.png">
+		<link rel="icon" href="logo/icon.png">
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 
 	</head>
 
 
 	<body id="main">
 
-		<img id="cornerlogo" src="whitelogo.png" style="width: 100px; height:80px ">
+		<img id="cornerlogo" src="adobe/whitelogo.png" style="width: 100px; height:80px ">
 		<header class="navbar">	
 			<nav><ul>
-				<li><a id="contact" href="contact.html">CONTACT</a></li>
-				<li><a href="projects.html">PROJECTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="index.html">HOME</a></li>
+				<li><a id="contact" class="navButton" href="contact.html">CONTACT</a></li>
+				<!-- <li><a href="projects.html">PROJECTS</a></li> -->
+				<li><a class="navButton" href="about.html">&nbsp&nbspABOUT&nbsp&nbsp</a></li>
+				<li><a class="navButton" href="index.html">&nbsp&nbspHOME&nbsp&nbsp</a></li>
 			</ul></nav>
 		</header>
 
 
 		<div id="logobox">
-			<object id="logo" data="namelogo.svg" type="image/svg+xml" style="width:250px; height: 250px;"">
-				<img id="logo" src="namelogo.png" style="width:250px; height: 250px;">
+			<object id="logo" data="adobe/namelogo.svg" type="image/svg+xml" style="width:250px; height: 250px;"">
+				<img id="logo" src="adobe/namelogo.png" style="width:250px; height: 250px;">
 			</object>
 		</div>
 
 		<h2 id="hello" class="typewriter">{ cout << "HELLO WORLD" << endl; }</h2>
 
-		<div id="objective">
+		<div class="objective">
 			<h1>INNOVATING TODAY. REINVENTING TOMORROW.</h1>
 			<h1 class="typewriter">I'M AN EXPLORER BY HEART, AN ARTIST BY EYE, AND CREATOR BY MIND.</h1>
 			
@@ -40,18 +39,20 @@
 		</div>
 
 
-		<div id="info">
-			<h1 style="font-size:50px">A LITTLE ABOUT ME</h1>
-			<p>MY NAME IS TERESA LIU AND I AM CURRENTLY STUDYING COMPUTER SCIENCE AND BUSINESS ADMINISTRATION AT THE UNIVERSITY OF SOUTHERN CALIFORNIA.</p>
+		<div class="info">
+			<h1>A LITTLE ABOUT ME</h1>
+			<img src="img/me3.jpg" style="width:220px; height: 220px;">
+			<p id="infoAboutMe">MY NAME IS TERESA LIU AND I AM CURRENTLY STUDYING COMPUTER SCIENCE AND BUSINESS ADMINISTRATION AT THE UNIVERSITY OF SOUTHERN CALIFORNIA.</p>
+
 		</div>
 
 		<div class="footer">
 
 			<div class="footernav">	
 				<nav><ul>
-					<li><a href="index.html">&nbsp&nbsp&nbspHOME&nbsp&nbsp&nbsp</a></li>				
+					<li><a href="index.html">&nbsp&nbspHOME&nbsp&nbsp</a></li>				
 					<li><a href="about.html">&nbsp&nbspABOUT&nbsp&nbsp</a></li>
-					<li><a href="projects.html">PROJECTS</a></li>
+					<!-- <li><a href="projects.html">PROJECTS</a></li> -->
 					<li><a href="contact.php">&nbspCONTACT&nbsp</a></li>
 
 

@@ -4,55 +4,79 @@
 		<title>Teresa</title>
 		<link rel="stylesheet" href="style.css" type="text/css"/>
 		<link rel="stylesheet" href="contactStyle.css" type="text/css"/>
-		<link rel="icon" href="icon.png">
+		<link rel="icon" href="adobe/icon.png">
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 
 	</head>
 
 	<body id="contactpage">
 
-		<img id="cornerlogo" src="whitelogo.png" style="width: 100px; height:80px ">
+		<img id="cornerlogo" src="adobe/whitelogo.png" style="width: 100px; height:80px ">
 		<header class="navbar">	
 			<nav><ul>
 				<li><a id="contact" href="contact.html">CONTACT</a></li>
-				<li><a href="projects.html">PROJECTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="index.html">HOME</a></li>
+				<!-- <li><a href="projects.html">PROJECTS</a></li> -->
+				<li><a href="about.html">&nbsp&nbspABOUT&nbsp&nbsp</a></li>
+				<li><a href="index.html">&nbsp&nbspHOME&nbsp&nbsp</a></li>
 			</ul></nav>
 		</header>
+		
+		<div id="emailTitle" class="title">
+			<h1>SHOOT ME AN EMAIL</h1>
+			<h4 action="mailto:teresali@usc.edu" method="post" enctype="text/plain" style="text-align: center; font-size: 24px;">TERESALI@USC.EDU</h4>
+
+		</div>
 
 
-		<form method="post" name="myemailform" action="form-to-email.php">
-			<p>
-				<label for='name'>NAME </label><br>
-				<input type="text" name="name">
-			</p>
-			<p>
-				<label for='email'>EMAIL ADDRESS</label><br>
-				<input type="text" name="email">
-			</p>
-			<p>
-				<label for='message'>MESSAGE</label> <br>
-				<textarea name="message"></textarea>
-			</p>
-			<input type="submit" name='submit' value="submit">
+
+		<form id="initialform" action="mailto:teresali@usc.edu" method="post" enctype="text/plain" >
+			<h1>SHOOT ME AN EMAIL</h1>
+				<h4>NAME ></h4>
+					<input type="text" name="Name "><br>
+				<h4>EMAIL ></h4>
+					<input type="text" name="Email "><br>
+				<h4>SUBJECT ></h4>
+					<input type="text" name="Subject "><br>
+				<div id="messagebox"> 
+					<h4 id="messageTitle">MESSAGE ></h4>
+						<textarea type="html" name="Message "></textarea>
+						<button id="sendButton" type="submit" value="SEND">SEND<span id="arrow"> >> <span></button>
+				</div>
 		</form>
 
-		<script language="JavaScript">
-		// Code for validating the form
-		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-		// for details
-		var frmvalidator  = new Validator("myemailform");
-		frmvalidator.addValidation("name","req","Please provide your name"); 
-		frmvalidator.addValidation("email","req","Please provide your email"); 
-		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-		</script>
-		<p>
-		<a href='http://www.html-form-guide.com/email-form/php-form-to-email.html'
-		>PHP form to email article page</a>
-		</p>
+			<div id="blurb">
+				<h2>FEEL FREE TO EMAIL ME ABOUT ANYTHING AND I WILL REPLY WITHIN 24 HOURS.</h2>
+			</div>
+
+				<div class="footer">
+
+			<div class="footernav">	
+				<nav><ul>
+					<li><a href="index.html">&nbsp&nbsp&nbspHOME&nbsp&nbsp&nbsp</a></li>				
+					<li><a href="about.html">&nbsp&nbspABOUT&nbsp&nbsp</a></li>
+					<!-- <li><a href="projects.html">PROJECTS</a></li> -->
+					<li><a href="contact.php">&nbspCONTACT&nbsp</a></li>
+
+
+
+				</ul></nav>
+			</div>
+
+
+			<h1 id="question">SO, ARE YOU WITH ME?</h1>
+
+			<ul class="social-icons list-unstyled list-inline"> 
+				<li><a href="http://www.linkedin.com/in/teresa-liu-1298a3120" target="_blank"><img src="img/icons/linkedin.svg" width="50" class="icon"></a></li>
+				<li><a href="https://www.facebook.com/teresa.liu.773776" target="_blank"><img src="img/icons/facebook.svg" width="50" class="icon"></a></li>
+				<li><a href="https://github.com/teresaliu20" target="_blank"><img src="img/icons/github.svg" width="50" class="icon"></a></li>
+				<li><a href="https://drive.google.com/open?id=1Mixn6rKu6tbelgxOH17byEf1bTjppjl5CTkpHe4iY7Y" target="_blank"><img src="img/icons/resume.png" width="50" class="icon"></i></a></li>
+			</ul>
+
+			<footer> Copyright &copy 2016 by Teresa Liu</footer>
+			
+		</div>
+
 
 	</body>
 
