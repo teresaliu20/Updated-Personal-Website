@@ -280,6 +280,8 @@ from, to { border-color: transparent }
 	letter-spacing: 2px;
 }
 
+
+
 @media only screen and (max-width: 1000px) {
     .objective .typewriter {
     	display: none;
@@ -344,6 +346,13 @@ from, to { border-color: transparent }
 	#initialform {
 		display: none;
 	}
+	
+	#contactfooternav {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
+
 
 	span #emailTitle{
 		font-size: 50px;
@@ -356,6 +365,7 @@ from, to { border-color: transparent }
 		letter-spacing: 2px;
 		height: 200px;
 	}
+
 
 }
 
@@ -399,6 +409,12 @@ from, to { border-color: transparent }
 
 	#skills {
 		height: 350px;
+	}
+
+	/* footer page media query */
+
+	#contactfooter #question {
+		margin-top: 70px;
 	}
 }
 
