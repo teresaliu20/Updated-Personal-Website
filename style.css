@@ -280,8 +280,6 @@ from, to { border-color: transparent }
 	letter-spacing: 2px;
 }
 
-
-
 @media only screen and (max-width: 1000px) {
     .objective .typewriter {
     	display: none;
