@@ -3,6 +3,11 @@
 	src: url(simplifica.ttf) format('truetype');
 }
 
+@font-face {
+	font-family: 'Avenir Next Condensed';
+	src: url(Avenir Next Condensed.ttc) format('truetype');
+}
+
 body {
 	margin: 0;
 	background-position: center;
