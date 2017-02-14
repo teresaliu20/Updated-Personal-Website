@@ -154,6 +154,13 @@
 		.projectbox {
 			filter: grayscale(100%);
 			transition: all 0.3s ease-in-out;
+			padding: 30px;
+		}
+		.project-inner {
+			border: 1px solid #dddddd;
+			padding: 25px;
+			background-color: white;
+			height: 400px;
 		}
 		.projectbox:hover {
 			filter: grayscale(0%);
@@ -161,14 +168,11 @@
 		#contact {
 			background-color: white;
 		}
-		.col-lg-4 {
-			padding-left: 30px;
-			padding-right: 30px;
-		}
 		.club-images {
-			height: 180px;
-			margin: 10px;
+			width: 330px;
 			background-color: white;
+			border: 1px solid #dddddd;
+			border-bottom: none;
 		}
 		#sparkscimg {
 			height: 120px;
@@ -377,42 +381,53 @@
 			<h2>Projects</h2>
 			<div class="row">
 				<div class="row">
-				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
+				<div class="projectbox col-lg-4 col-md-4 col-sm-6">		
 					<img class="club-images" src="img/projects/studybuddy.png">
-					<h3 class="text-uppercase">studybuddy</h3>
-					<h4>trojanhacks 2016</h4>
-					<h4>Winner: Best Visual Hack</h4>
-					<p>Our team created a chrome extension prevents users from wasting time on recreational websites during a set study period. I designed the UIUX of the extension and programmed the front-end aspects for a simple-to-use interface.</p>
+					<div class="project-inner">
+						<h3 class="text-uppercase">studybuddy</h3>
+						<h4>trojanhacks 2016</h4>
+						<h4>Winner: Best Visual Hack</h4>
+						<p>Our team created a chrome extension prevents users from wasting time on recreational websites during a set study period. I designed the UIUX of the extension and programmed the front-end aspects for a simple-to-use interface.</p>
+					</div>
 				</div>
 				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
 					<img class="club-images" src="img/projects/succinct.png">
-					<h3 class="text-uppercase">succinct</h3>
-					<h4>SBHacks 2017</h4>
-					<h4>Winner: Organizer's choice</h4>
-					<p>We made a web app that could turn large bodies of text, say an essay, into a sleek presentation slide within the click of a button. I developed the back-end, utilizing Google's language processing API to turn text into bullet points, and I helped design the front-end as well. </p>
+					<div class="project-inner">
+						<h3 class="text-uppercase">succinct</h3>
+						<h4>SBHacks 2017</h4>
+						<h4>Winner: Organizer's choice</h4>
+						<p>We made a web app that could turn large bodies of text, say an essay, into a sleek presentation slide within the click of a button. I developed the back-end, utilizing Google's language processing API to turn text into bullet points, and I helped design the front-end as well. </p>
+					</div>
 				</div>
 				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
+					
 					<img class="club-images" src="img/projects/hacktube.png">
-					<h3 class="text-uppercase">hacktube</h3>
-					<h4>SB Hacks 2017</h4>
-					<h4>Winner: 2nd place overall</h4>
-					<h4>Winner: mlh #hackharassment</h4>
-					<p>Our team tackled the #hackharassment challenge and made a chrome extension that hides hateful comments notoriously found on YouTube videos. I developed the front-end for this extension, mainly consisting of the pop-up window, and I designed the assets using Adobe Illustrator. </p>
+					<div class="project-inner">
+						<h3 class="text-uppercase">hacktube</h3>
+						<h4>SB Hacks 2017</h4>
+						<h4>Winner: 2nd place overall</h4>
+						<h4>Winner: mlh #hackharassment</h4>
+						<p>Our team tackled the #hackharassment challenge and made a chrome extension that hides hateful comments notoriously found on YouTube videos. I developed the front-end for this extension, mainly consisting of the pop-up window, and I designed the assets using Adobe Illustrator. </p>
+					</div>
 				</div>
-				<div class="projectbox col-lg-1 col-md-1 col-sm-0"></div>
-				<div class="projectbox col-lg-5 col-md-5 col-sm-6">
+				<div class="projectbox col-lg-2 col-md-2 col-sm-0"></div>
+				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
 					<img class="club-images" src="img/projects/mundo.png">
-					<h3 class="text-uppercase">hello mundo</h3>
-					<h4>Hackpoly 2017</h4>
-					<p>Our lastest hack was a web app that used tracking.js and Google's language API to generate speech bubble's next to one's face using voice and face detection, translate that text, and log it into a sidebar. My role was the front-end developer, and I designed the intro page and the sidebar.</p>
+					<div class="project-inner">
+						<h3 class="text-uppercase">hello mundo</h3>
+						<h4>Hackpoly 2017</h4>
+						<p>Our lastest hack was a web app that used tracking.js and Google's language API to generate speech bubble's next to one's face using voice and face detection, translate that text, and log it into a sidebar. My role was the front-end developer, and I designed the intro page and the sidebar.</p>
+					</div>
 				</div>
-				<div class="projectbox col-lg-5 col-md-5 col-sm-6">
+				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
 					<img class="club-images" src="img/projects/hamster.png">
-					<h3 class="text-uppercase">hamster</h3>
-					<h4>calhacks 2016</h4>
-					<p>Our iOS app aimed to encourage exercise. This running app plays music during a job with a twist. It plays the user's favorite music, but only when the runner is running at their goal pace. If below pace, it plays the user's hated music. I mapped the UIUX of the app on XCode and developed some front-end aspects using Swift. </p>
+					<div class="project-inner">
+						<h3 class="text-uppercase">hamster</h3>
+						<h4>calhacks 2016</h4>
+						<p>Our iOS app aimed to encourage exercise. This running app plays music during a job with a twist. It plays the user's favorite music, but only when the runner is running at their goal pace. If below pace, it plays the user's hated music. I mapped the UIUX of the app on XCode and developed some front-end aspects using Swift. </p>
+					</div>
 				</div>
-				<div class="projectbox col-lg-1 col-md-1 col-sm-0"></div>
+				<div class="projectbox col-lg-2 col-md-2 col-sm-0"></div>
 			</div>
 		</div>
 	</div>
