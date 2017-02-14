@@ -1,82 +1,463 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Teresa</title>
-		<link rel="stylesheet" href="style.css" type="text/css"/>
-		<link rel="icon" href="adobe/icon.png">
+<head>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="adobe/icon.png">
+	
+	<title>Teresa</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-	</head>
 
 
-	<body id="main">
+	<style>
+		
+		@font-face {
+			font-family: 'simplifica';
+			src: url(simplifica.ttf) format('truetype');
+		}
 
-		<img id="cornerlogo" src="adobe/whitelogo.png" style="width: 100px; height:80px ">
-		<header class="navbar">	
-			<nav><ul>
-				<li><a id="contact" class="navButton" href="contact.html">CONTACT</a></li>
-				<!-- <li><a href="projects.html">PROJECTS</a></li> -->
-				<li><a class="navButton" href="about.html">&nbsp&nbspABOUT&nbsp&nbsp</a></li>
-				<li><a class="navButton" href="index.html">&nbsp&nbspHOME&nbsp&nbsp</a></li>
-			</ul></nav>
-		</header>
+		@font-face {
+			font-family: 'Avenir Next Condensed';
+			src: url(Avenir Next Condensed.ttc) format('truetype');
+		}
+		body {
+			font-family: 'Avenir Next Condensed';
+			margin: 0;
+		}
+		.jumbotron {
+			height:110vh;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			margin: 0;
+			color: white;
+			font-family: simplifica;
+		}
+		#laptop {
+			background-image: url(img/laptop.jpeg);
+			margin: 0px;
+			padding-top: 0px;
+		}
+		#spark {
+			background-image: url(img/sparks.jpeg);
+		}
+		#coffee {
+			background-image: url(img/coffee.jpeg);
+		}
+
+		#logobox {
+			background-color: rgba(0,0,0,.6);
+			width: 270px;
+			margin: auto;
+			display: block;
+			margin-top: 17vh;
+		}
+		#logo {
+			padding:10px;
+		}
+		#logo-corner {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 100px;
+		}
+
+
+		#titlebox {
+			background-color: rgba(0,0,0,.6);
+			width: 400px;
+			margin: auto;
+			display: block;
+			margin-top: 200px;
+			padding: 20px;
+		}
+
+		.grey-background {
+			background-color: #EDEEEF;
+		}
+		.navbar {
+			margin: 0px;
+			background-color: transparent;
+			font-family: simplifica;
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+		.nav-items {
+			color: white;
+			margin-left: 17px;
+			margin-top: 15px;
+			padding: 10px 20px 8px 20px !important;
+			transition: all 0.3s ease-in-out;
+		}
+		#contact-style {
+			border: 1px solid white;
+		}
+
+		#nav-container {
+			padding: 10px;
+			margin-bottom: 0px;
+
+		}
+		.container {
+			padding: 60px 30px;
+			margin: auto;
+		}
+
+		h1 {
+			font-size: 45px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			padding-bottom: 15px;
+		}
+		h2 {
+			font-size: 40px;
+			letter-spacing: 1px;
+			outline: 1px;
+			text-transform: uppercase;
+			padding-bottom: 30px;
+		}
+		h3 {
+			font-size: 25px;
+			letter-spacing: 1px;
+			outline: 1px;
+			text-transform: uppercase;
+		}
+		h4 {
+			font-size: 20px;
+			outline: 1px;
+			text-transform: uppercase;
+
+		}
+		p {
+			font-family: Avenir Next Condensed;
+			font-size: 18px;
+			line-height: 1.5em;
+			text-align: left;
+		}
+		#me-img {
+			margin-bottom: 50px;
+		}
+		#organizations {
+			
+		}
+		#projects {
+			background-color: #EDEEEF;
+		}
+		.projectbox {
+			filter: grayscale(100%);
+			transition: all 0.3s ease-in-out;
+		}
+		.projectbox:hover {
+			filter: grayscale(0%);
+		}
+		#contact {
+			background-color: white;
+		}
+		.col-lg-4 {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.club-images {
+			height: 180px;
+			margin: 10px;
+			background-color: white;
+		}
+		#sparkscimg {
+			height: 120px;
+			margin: 40px 0;
+		}
+		/* social media buttons */
+		.list-unstyled {
+			padding-left: 0;
+			list-style: none;
+			margin-bottom: 40px;
+		}
+		.list-inline li {
+			display: inline-block;
+			padding-right: 8px;
+			padding-left: 8px;
+			margin-bottom: 0px;
+		}
+
+		.social-icons .icon {
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+		}
+
+		.social-icons .icon:hover, .social-icons .icon:active { 
+			-webkit-transform: scale(1.1) rotate(360deg);
+			-moz-transform: scale(1.1) rotate(360deg);
+			-ms-transform: scale(1.1) rotate(360deg);
+			-o-transform: scale(1.1) rotate(360deg);
+			transform: scale(1.1) rotate(360deg);
+		}
+		.footer {
+			color: white;
+			background-color: black;
+			padding-top: 70px;
+			padding-bottom: 180px;
+		}
+		.footer p {
+			text-align: center;
+			letter-spacing: 1px;
+		}
+		/* more footing styling */ 
+		#question {
+			margin-bottom: 20px;
+			margin-top: 50px;
+		}
+		footer {
+			margin: 90px;
+		}
+
+		#resumeButtonDiv {
+			margin-top: 60px;
+		}
+
+		#resumeButton {
+			margin: 10px;
+			text-decoration: none;
+			font-size: 25px;
+			padding: 15px 35px;
+			border: 2px solid black;
+			border-radius: 5em;
+			color: black;
+
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+		}
+		#resumeButton:hover {
+			color: white;
+			background-color: black;
+		}
+		#download-button:hover {
+			color: white;
+			background-color: #EA7A00;
+			border-color: #EA7A00;
+
+		}
+
+		#download-button {
+			margin: 10px;
+			margin-top: 100px;
+			text-decoration: none;
+			font-size: 25px;
+			padding: 15px 35px;
+			border: 2px solid black;
+			border-radius: 5em;
+			color: black;
+
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+		}
+		#resume-popup {
+			margin-top: 50px;
+			display: none;
+			padding: 50px;
+
+		}
+		#resume {
+			width: 80%;
+		}
+
+
+
+	</style>
+
+
+</head>
+
+<body>
+	<div id="laptop" class="jumbotron text-center">
+
+<nav class="navbar navbar-static-top">
+      <div id="nav-container" class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img id="logo-corner" src="adobe/whitelogo.png"/>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav-items" href="#hello">WHO I AM</a></li>
+            <li><a class="nav-items" href="#organizations">WHAT I DO</a></li>
+            <li><a class="nav-items" href="#projects">WHAT I MAKE</a></li>
+            <li><a id="contact-style" class="nav-items" href="#contact">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
 
 
 		<div id="logobox">
-				<img id="logo" src="adobe/namelogo.png" style="width:250px; height: 250px;">
+			<img id="logo" class="responsive" src="adobe/namelogo.png" style="width:250px; height: 250px;">
 		</div>
-
-		<h2 id="hello" class="typewriter">{ cout << "HELLO WORLD" << endl; }</h2>
-
-		<div class="objective">
-			<h1>INNOVATING TODAY. REINVENTING TOMORROW.</h1>
-			<h1 class="typewriter">I'M AN EXPLORER BY HEART, AN ARTIST BY EYE, AND CREATOR BY MIND.</h1>
-			
-
-		</div>
-
-
-		<div class="info">
-			<h1>A LITTLE ABOUT ME</h1>
-			<img src="img/me3.jpg" style="width:220px; height: 220px;">
-			<p id="infoAboutMe">MY NAME IS TERESA LIU AND I AM CURRENTLY STUDYING COMPUTER SCIENCE AND BUSINESS ADMINISTRATION AT THE UNIVERSITY OF SOUTHERN CALIFORNIA.</p>
-
-		</div>
-
-		<div class="footer">
-
-			<div class="footernav">	
-				<nav><ul>
-					<li><a href="index.html">&nbsp&nbspHOME&nbsp&nbsp</a></li>				
-					<li><a href="about.html">&nbsp&nbspABOUT&nbsp&nbsp</a></li>
-					<!-- <li><a href="projects.html">PROJECTS</a></li> -->
-					<li><a href="contact.html">&nbspCONTACT&nbsp</a></li>
-
-
-
-				</ul></nav>
+	</div>
+	
+	<div id="hello" class="grey-background">
+		<div class="container">
+			<div class="text-center">
+				<h1>innovating today. reinventing tomorrow</h1>
+				<h3>i'm an explorer by heart, an artist by eye, and a creator by mind.</h3>
 			</div>
+		</div>
+	</div>
 
-			<h1 id="question">SO, ARE YOU WITH ME?</h1>
+	<div id="about" class="container text-center">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<img id="me-img" class="img-responsive" src="img/me3.jpg">
+			</div>
+			<h1>Hey!</h1>
+			<div class="col-lg-8 col-md-6 col-sm-6">
+				<p>My name is Teresa Liu and I am a freshman studying Computer Science and Business Administration at the University of Southern California.</p>
+				<p>I'm an aspiring software engineer with a love for design and music.</p>
+			</div>
+		</div>
+	</div>
 
-			<ul class="social-icons list-unstyled list-inline"> 
-				<li><a href="http://www.linkedin.com/in/teresa-liu-1298a3120" target="_blank"><img src="img/icons/linkedin.svg" width="50" class="icon"></a></li>
-				<li><a href="https://www.facebook.com/teresa.liu.773776" target="_blank"><img src="img/icons/facebook.svg" width="50" class="icon"></a></li>
-				<li><a href="https://github.com/teresaliu20" target="_blank"><img src="img/icons/github.svg" width="50" class="icon"></a></li>
-				<li><a href="https://drive.google.com/file/d/0B4_Fp9RvOEoRdzBzdThlT0VxQmM/view?usp=sharing" target="_blank"><img src="img/icons/resume.png" width="50" class="icon"></i></a></li>
-			</ul>
 
-			<footer> Copyright &copy 2016 by Teresa Liu</footer>
-			
+	<div id="spark" class="jumbotron text-center">
+		<div id="titlebox">
+			<h1>about me</h1>
+		</div>
+	</div>
+	<div id="organizations">
+		<div class="container text-center">
+			<h2>organizations</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<img id="sparkscimg" class="club-images" src="img/clubs/sparksc.png">
+					<h3 class="text-uppercase">spark sc</h3>
+					<h4>Board Member</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<img class="club-images" src="img/clubs/acm.png">
+					<h3 class="text-uppercase">usc acm</h3>
+					<h4>logistics officer</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<img class="club-images" src="img/clubs/scope.jpeg">
+					<h3 class="text-uppercase">scope</h3>
+					<h4>team developer</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="projects">
+		<div class="container text-center">
+			<h2>Projects</h2>
+			<div class="row">
+				<div class="row">
+				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
+					<img class="club-images" src="img/projects/studybuddy.png">
+					<h3 class="text-uppercase">studybuddy</h3>
+					<h4>trojanhacks 2016</h4>
+					<h4>Winner: Best Visual Hack</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
+					<img class="club-images" src="img/projects/succinct.png">
+					<h3 class="text-uppercase">succinct</h3>
+					<h4>SBHacks 2017</h4>
+					<h4>Winner: Organizer's choice</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="projectbox col-lg-4 col-md-4 col-sm-6">
+					<img class="club-images" src="img/projects/hacktube.png">
+					<h3 class="text-uppercase">hacktube</h3>
+					<h4>SB Hacks 2017</h4>
+					<h4>Winner: 2nd place overall</h4>
+					<h4>Winner: mlh #hackharassment</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="projectbox col-lg-1 col-md-1 col-sm-0"></div>
+				<div class="projectbox col-lg-5 col-md-5 col-sm-6">
+					<img class="club-images" src="img/projects/mundo.png">
+					<h3 class="text-uppercase">hello mundo</h3>
+					<h4>Hackpoly 2017</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="projectbox col-lg-5 col-md-5 col-sm-6">
+					<img class="club-images" src="img/projects/hamster.png">
+					<h3 class="text-uppercase">hamster</h3>
+					<h4>calhacks 2016</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. </p>
+				</div>
+				<div class="projectbox col-lg-1 col-md-1 col-sm-0"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="coffee" class="jumbotron text-center">
+		<div id="titlebox">
+			<h1>contact</h1>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="container text-center">
+			<h2>shoot me an email at</h2>
+			<h1>teresali@usc.edu</h1>
+			<h3>and read this one-pager about me</h3>
+			<div id="resumeButtonDiv">
+				<a id="resumeButton" role="button">PREVIEW RESUME</a>
+				<div id="resume-popup"><img id="resume" src="resume.png"/></div>
+				<a id="download-button" role="button" href="https://drive.google.com/file/d/0B4_Fp9RvOEoRdzBzdThlT0VxQmM/view?usp=sharing">&nbsp&nbspDOWNLOAD&nbsp&nbsp</a>
+			</div>
 		</div>
 
+	</div>
+
+	<div class="text-center footer">
+		<h1 id="question" class="text-uppercase">so, are you with me?</h1>
+
+		<ul class="social-icons list-unstyled list-inline"> 
+			<li><a href="http://www.linkedin.com/in/teresa-liu-1298a3120" target="_blank"><img src="img/icons/linkedin.svg" width="50" class="icon"></a></li>
+			<li><a href="https://www.facebook.com/teresa.liu.773776" target="_blank"><img src="img/icons/facebook.svg" width="50" class="icon"></a></li>
+			<li><a href="https://github.com/teresaliu20" target="_blank"><img src="img/icons/github.svg" width="50" class="icon"></a></li>
+			<li><a href="https://devpost.com/teresaliu20" target="_blank"><img src="img/icons/devpost.svg" width="50" class="icon"></a></li>
+		</ul>
+		<footer> Copyright &copy 2016 by Teresa Liu</footer>
+	</div>
 
 
+	<script>
+		document.getElementById("resumeButton").addEventListener("click", function(){
+		    document.getElementById("resume-popup").style.display = "block";
+		});
+
+	</script>
+
+</body>
 
 
-
-	</body>
 
 </html>
