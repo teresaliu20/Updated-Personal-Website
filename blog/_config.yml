@@ -6,11 +6,11 @@ title:               Hydejack
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://qwtel.com
+url:                 https://teresaliu.com
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             /hydejack
+baseurl:             /blog
 
 # A very short description of your page
 tagline:             A pretentious two-column Jekyll theme.
