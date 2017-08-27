@@ -12,8 +12,6 @@ gem "jekyll-sitemap", "~> 1.0"
 
 gem "classifier-reborn", "~> 2.1"
 
-source 'https://rubygems.org'
-
 require 'json'
 require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
