@@ -1,4 +1,4 @@
 ---
 ---
-{% capture include_to_scssify %}{% include styles/style.scss %}{% endcapture %}
+{% capture include_to_scssify %}{% endcapture %}
 {{ include_to_scssify | scssify }}
