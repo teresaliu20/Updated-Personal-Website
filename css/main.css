@@ -118,6 +118,10 @@ body {
   background-color: #F2385A;
   border: 1px solid #F2385A;
 }
+#splash-section #buttons #blog-button {
+  text-decoration: none;
+  color: white;
+}
 #splash-section #buttons #blog-button:hover {
   background-color: #3AA1BF;
   border: 1px solid #3AA1BF;
