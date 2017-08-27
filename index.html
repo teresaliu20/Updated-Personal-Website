@@ -13,122 +13,68 @@
         <link rel="stylesheet" href="css/main.css"> 
     </head>
     <body>
-        <!-- Welcome -->
-        <div id="splash-section">
-            <div class="text-animation">
-                <svg viewBox="0 0 500 100">
-                  <!-- Symbol-->
-                  <symbol id="s-text">
-                    <text text-anchor="middle" x="50%" y="50%" dy=".35em">Teresa Liu</text>
-                  </symbol>
-                  <!-- Duplicate symbols-->
-                  <use class="text" xlink:href="#s-text"></use>
-                  <use class="text" xlink:href="#s-text"></use>
-                  <use class="text" xlink:href="#s-text"></use>
-                  <use class="text" xlink:href="#s-text"></use>
-                  <use class="text" xlink:href="#s-text"></use>
-                </svg>
-            </div>
-            <div id="red-line"></div>
-            <!-- Typing.js animation -->
-            <div id="catch-phrase"><div id="typed-text">&nbsp</div></div>
+      <!-- Welcome -->
+      <div id="splash-section">
+        <div id="animation-box">
+          <div id="text-animation">
+            <svg viewBox="0 0 300 70">
+              <!-- Symbol-->
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="50%" dy=".35em">Teresa</text>
+              </symbol>
+              <!-- Duplicate symbols-->
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+            </svg>
+          </div>
+          <div id="text-animation-2">
+            <svg viewBox="0 0 160 80">
+              <!-- Symbol-->
+              <symbol id="s-text2">
+                <text text-anchor="middle" x="50%" y="50%" dy=".33em">Liu</text>
+              </symbol>
+              <!-- Duplicate symbols-->
+              <use class="text" xlink:href="#s-text2"></use>
+              <use class="text" xlink:href="#s-text2"></use>
+              <use class="text" xlink:href="#s-text2"></use>
+              <use class="text" xlink:href="#s-text2"></use>
+              <use class="text" xlink:href="#s-text2"></use>
+            </svg>
+          </div>
         </div>
-        <!-- About me -->
-        <div id="about-section"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="300">
-            <div id="about-title">Stuff about me<span class="dot">.</span></div>
-            <div id="about-info">
-                <div id="hey">
-                    <h1 >Oh hey!</h1>
-                    <h1 >I'm Teresa</h1>
-                </div>
-                <p>I'm a software engineer studying at the University of Southern California. I'm majoring in Computer Engineering/Computer Science at the USC Viterbi School while minoring in Communication Design and I'll be graduating in May 2020. Developing is my favorite thing to do, so here's my website dedicated to showcasing myself as a programmer and engineer.</p>
-            </div>
+        <div id="red-line"></div>
+        <!-- Typing.js animation -->
+        <div id="catch-phrase">
+          <div id="typed-text"></div>
         </div>
-        <!-- Projects -->
-         <div id="projects-section"
-         data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-offset="200">
-            <div id="projects-title">What I'm Creating<span class="dot">.</span></div>
-            <div id="projects-list">
-                <div class="project-box"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="200">
-                    <h1 class="project-name">Project</h1>
-                    <p class="project-info">Project</p>
-                </div>
-                <div class="project-box"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="300">
-                    <h1 class="project-name">Project</h1>
-                    <p class="project-info">Project</p>
-                </div>
-                <div class="project-box"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="400">
-                    <h1 class="project-name">Project</h1>
-                    <p class="project-info">Project</p>
-                </div>
-                <div class="project-box"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="300">
-                    <h1 class="project-name">Project</h1>
-                    <p class="project-info">Project</p>
-                </div>
-                <div class="project-box"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="400">
-                    <h1 class="project-name">Project</h1>
-                    <p class="project-info">Project</p>
-                </div>
-            </div>
+        <div id="buttons">
+          <a id="resume-button" href="https://drive.google.com/file/d/0B4_Fp9RvOEoRdzBzdThlT0VxQmM/view?usp=sharing">RESUME
+          </a></a>
+          <div id="blog-button">BLOG
+          </div>
+          <div id="email-button">EMAIL
+          </div>
         </div>
-        <!-- Blog -->
-        <div id="blog-section"
-         data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-offset="300">
-            <div id="blog-title">Read my mind<span class="dot">.</span></div>
-            <div id="blog-info">Check out my blog</div>
-            <div id="blog-button">HERE</div>
-         </div>
-
-        <!-- Contact -->
-        <div id="contact-section"
-         data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-offset="300">
-            <div id="contact-title">Say hi<span class="dot">.</span></div>
-            <div id="contact-info">Reach me at teresa.liu@usc.edu</div>
-         </div>
-
-        <div id="footer">
         <ul class="social-icons list-unstyled list-inline"> 
           <li><a href="http://www.linkedin.com/in/teresa-liu-1298a3120" target="_blank"><img src="img/icons/linkedin.svg" width="50" class="icon"></a></li>
           <li><a href="https://www.facebook.com/teresa.liu.773776" target="_blank"><img src="img/icons/facebook.svg" width="50" class="icon"></a></li>
           <li><a href="https://github.com/teresaliu20" target="_blank"><img src="img/icons/github.svg" width="50" class="icon"></a></li>
           <li><a href="https://devpost.com/teresaliu20" target="_blank"><img src="img/icons/devpost.svg" width="50" class="icon"></a></li>
         </ul>
-            <p class="copyright">Copyright Teresa Liu 2017</p>
-        </div>
-        <!-- Animate on scroll library -->
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        <!-- jQuery CDN -->
-        <script
-      src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"></script>
-        <!-- Typed.js -->
-        <script type="text/javascript" src="js/typed.min.js"></script>
-        <!-- /js/animations.js -->
-        <script type="text/javascript" src="js/animations.js"></script>
+      </div>
+      <!-- Animate on scroll library -->
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      <!-- jQuery CDN -->
+      <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+      <!-- Typed.js -->
+      <script type="text/javascript" src="js/typed.min.js"></script>
+      <!-- /js/animations.js -->
+      <script type="text/javascript" src="js/animations.js"></script>
     </body>
 </html>
