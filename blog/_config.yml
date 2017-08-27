@@ -12,6 +12,8 @@ url:                 https://teresaliu.com
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             /blog
 
+production_url :     https://teresaliu.com/blog
+
 # A very short description of your page
 tagline:             A pretentious two-column Jekyll theme.
 
