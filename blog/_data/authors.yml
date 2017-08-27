@@ -1,0 +1,88 @@
+# The primary author of this blog.
+# Must be the same as `author` in `_config.yml`.
+# Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
+qwtel:
+  name:              Teresa Liu
+  email:             teresali@usc.edu
+
+  # Used at the bottom of each page and at the top of the `about` layout
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:             |
+    I'm Teresa. I'm a software engineer studying at the University of Southern
+    California. I'm majoring in Computer Engineering/Computer Science at the
+    USC Viterbi School while minoring in Communication Design and I'll be graduating
+    in May 2020. Developing is my favorite thing to do, so here's my blog
+    where I talk about everything technical and everything I want to voice.
+
+    ---
+
+    #### Explore around my blog, and let me know what you think.
+
+    Email me at teresa.liu@usc.edu
+
+
+  # This photo will be used in the about section
+  picture:
+    src:             http://www.teresaliu.com/img/me3.jpg
+    # srcset is optional, but can be used to provide higher res versions for retina displays
+    srcset:
+      1x:            http://www.teresaliu.com/img/me3.jpg
+      2x:            http://www.teresaliu.com/img/me3.jpg
+
+  # Social media icons in sidebar
+  # Comment/uncommet to show/hide
+  # Icons appear in order, can be rearranged:
+  social:
+    # facebook:        <username>
+    # twitter:         <username>
+    # google:          <number>
+    # vk:              <username>
+    # youtube:         <string_string_string>
+    # vimeo:           <username>
+    # vine:            <username>
+    # spotify:         <user>/<number>
+    # soundcloud:      <username>
+    # lastfm:          <username>
+    # instagram:       <username>
+    # flickr:          <string@string>
+    # 500px:           <username>
+    # dribbble:        <username>
+    # behance:         <username>
+    # deviantart:      <username>
+    # ello:            <username>
+    # twitch:          <username>
+    # steam:           <number>
+    # reddit:          <username>
+    # tumblr:          <username>
+    # pinterest:       <username>
+    # foursquare:      <number>
+    # yelp:            <string>
+    github:          teresaliu20
+    # stackoverflow:   <number/username>
+    # npm:             <username>
+    # hackernews:      <username>
+    # trello:          <firstnamelastname>
+    linkedin:        teresaliu20
+    # xing:            <firstname_lastname_counter>
+    # blogger:         <number>
+    # delicious:       <username>
+    # stumbleupon:     <username>
+    # paypal:          <username>
+    email:           mailto:teresali@usc.edu
+
+# Another author
+mdo:
+  name:              <firtname> <lastname>
+  email:             <mail@domain.tld>
+  about:             |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    Open `_data/authors.yml` to edit this text.
+  picture:           https://placehold.it/128x128
+  social:
+    github:          <username>
+    twitter:         <username>
+  image: 'data:image/gif;base64,R0lGODlhAQABAPAAACAgIP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' # http://jsfiddle.net/LPxrT/
+  color: '#268bd2'
