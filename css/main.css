@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,900);
 body {
+  font-weight: 700;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #070018;
@@ -148,4 +149,18 @@ body {
   -ms-transform: scale(1.1) rotate(360deg);
   -o-transform: scale(1.1) rotate(360deg);
   transform: scale(1.1) rotate(360deg);
+}
+#splash-section #archives {
+  position: absolute;
+  bottom: 3%;
+  color: #4b445c;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+#splash-section #archives .dot {
+  font-weight: 900;
+}
+#splash-section #archives a {
+  color: #4b445c;
 }

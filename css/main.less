@@ -5,10 +5,11 @@
 @eggshell: #E9F1DF;
 @blue: #3AA1BF;
 @navy: #070018;
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,900);
 @font: 'Open Sans', sans-serif;
 
 body {
+	font-weight: 700;
 	margin: 0;
 	font-family: @font;
 	background-color: @navy;
@@ -150,5 +151,19 @@ body {
 		-ms-transform: scale(1.1) rotate(360deg);
 		-o-transform: scale(1.1) rotate(360deg);
 		transform: scale(1.1) rotate(360deg);
+	}
+	#archives {
+		position: absolute;
+		bottom: 3%;
+		color: @navy + #444;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		font-size: 12px;
+		.dot {
+			font-weight: 900;
+		}
+		a {
+			color: @navy + #444;
+		}
 	}
 }
