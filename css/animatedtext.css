@@ -3,6 +3,7 @@
 .text {
   fill: none;
   stroke-width: 2.5;
+  font-weight: 700;
   stroke-linejoin: round;
   stroke-dasharray: 70 280;
   stroke-dashoffset: 0;
