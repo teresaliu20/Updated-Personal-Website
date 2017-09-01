@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #070018;
+  overflow-x: hidden;
 }
 #element::-webkit-scrollbar {
   display: none;
@@ -28,18 +29,20 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  min-height: 700px;
+  border: 1px solid blue;
   margin: 0;
   background-color: #070018;
+  position: relative;
 }
 #splash-section #animation-box {
-  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 #splash-section #text-animation {
-  min-width: 500px;
+  width: 500px;
   font: 5em/1 Open Sans, Impact;
   text-transform: uppercase;
   position: relative;
