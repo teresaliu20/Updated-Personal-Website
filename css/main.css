@@ -152,6 +152,7 @@ body {
   transform: scale(1.1) rotate(360deg);
 }
 #splash-section #archives {
+  text-align: center;
   position: absolute;
   bottom: 3%;
   color: #4b445c;
