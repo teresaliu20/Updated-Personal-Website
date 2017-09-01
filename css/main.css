@@ -30,7 +30,6 @@ body {
   flex-direction: column;
   height: 100vh;
   min-height: 700px;
-  border: 1px solid blue;
   margin: 0;
   background-color: #070018;
   position: relative;
@@ -96,7 +95,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   color: white;
-  width: 70%;
   max-width: 700px;
 }
 #splash-section #buttons div,
