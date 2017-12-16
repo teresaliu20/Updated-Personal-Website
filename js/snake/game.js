@@ -1,6 +1,8 @@
 var snake;
 var scl = 18;
 var food;
+var highScore;
+var score;
 
 function setup() {
 	createCanvas($(window).width(),$(window).height());
@@ -9,21 +11,33 @@ function setup() {
 		frameRate(20);
 		setFood();
 	}
+	score = 0;
+	highScore = 0;
 }
 
 $(window).resize(function() {
 	snake.stop();
 	this.setup();
+	$("#score").text("CLICK ANYWHERE");
 })
 
 function mousePressed() {
+	if (!snake) {
+		return;
+	}
 	if (snake.isRunning()) {
 		this.setup();
 		snake.stop();
 	}
 	else {
-		snake.start();
+		console.log(mouseX)
+		const btn = $("#buttons");
+		if (!(btn.position().left < mouseX && btn.position().left + btn.width() > mouseX
+			&& btn.position().top < mouseY && btn.position().top + btn.height() > mouseY)) {
+			snake.start();
+		}
 	}
+
 }
 
 function setFood(){
@@ -38,12 +52,27 @@ function draw() {
 		background('#070018');
 		snake.show();
 		if (snake.isRunning()) {
+			if (score === 0) {
+				$("#score").text(score);
+			}
 			if (snake.eat(food)) {
 				setFood();
+				score++;
+				$("#score").text(score);
+				if (score > highScore) {
+					$("#high-score").text("H: " + score);
+				}
+			}
+			if (snake.death()) {
+				score = 0;
+				$("#score").text(score);
 			}
 			snake.move();
 			fill (255, 0 , 100);
 			rect(food.x, food.y, scl, scl);
+		}
+		else {
+			$("#score").text("CLICK ANYWHERE");
 		}
 	}
 }

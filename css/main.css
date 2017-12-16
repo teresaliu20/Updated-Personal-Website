@@ -6,6 +6,30 @@ body {
   background-color: #070018;
   overflow-x: hidden;
   overflow-y: hidden;
+  min-height: 750px;
+}
+#game-box {
+  color: white;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  min-height: 750px;
+}
+@media (max-width: 768px) {
+  #game-box {
+    display: none;
+  }
+}
+#score {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+#high-score {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
 }
 #wrapper {
   overflow-x: hidden;
@@ -37,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 700px;
+  min-height: 750px;
   position: relative;
 }
 #splash-section #center-box {
