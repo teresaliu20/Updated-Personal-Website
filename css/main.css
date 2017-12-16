@@ -5,6 +5,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #070018;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+#wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
 }
 #element::-webkit-scrollbar {
   display: none;
@@ -27,12 +36,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100vh;
   min-height: 700px;
-  margin: 0;
-  background-color: #070018;
   position: relative;
+}
+#splash-section #center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #splash-section #animation-box {
   display: flex;
@@ -128,16 +140,6 @@ body {
   background-color: #3AA1BF;
   border: 1px solid #3AA1BF;
 }
-@media (max-width: 768px) {
-  #splash-section #buttons {
-    width: 80vw;
-    display: block;
-  }
-  #splash-section #buttons div,
-  #splash-section #buttons a {
-    display: block;
-  }
-}
 #splash-section .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -175,4 +177,17 @@ body {
 }
 #splash-section #archives a {
   color: #4b445c;
+}
+@media (max-width: 768px) {
+  #splash-section #buttons {
+    width: 80vw;
+    display: block;
+  }
+  #splash-section #buttons div,
+  #splash-section #buttons a {
+    display: block;
+  }
+  #splash-section #catch-phrase {
+    width: 300px;
+  }
 }

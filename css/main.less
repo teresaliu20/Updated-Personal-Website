@@ -23,6 +23,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	position: absolute;
 }
 
 // Hide Scroll bar
@@ -48,12 +49,13 @@ body {
 
 #splash-section {
 	.center;
-	flex-direction: column;
 	height: 100vh;
 	min-height: 700px;
-	margin: 0;
-	background-color: @navy;
 	position: relative;
+	#center-box {
+		.center;
+		flex-direction: column;
+	}
 	#animation-box {
 		.center;
 		flex-wrap: wrap;
@@ -137,13 +139,6 @@ body {
 				border: 1px solid @blue;
 			}
 		}
-		@media (max-width: 768px) {
-			width: 80vw;
-			display: block;
-			div, a {
-				display: block;
-			}
-		}
 	}
 	.list-unstyled {
 		padding-left: 0;
@@ -180,6 +175,18 @@ body {
 		}
 		a {
 			color: @navy + #444;
+		}
+	}
+	@media (max-width: 768px) {
+		#buttons {
+			width: 80vw;
+			display: block;
+			div, a {
+				display: block;
+			}
+		}
+		#catch-phrase {
+			width: 300px;
 		}
 	}
 }
