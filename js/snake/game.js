@@ -10,9 +10,9 @@ function setup() {
 		snake = new Snake();
 		frameRate(20);
 		setFood();
+		score = 0;
+		highScore = 0;
 	}
-	score = 0;
-	highScore = 0;
 }
 
 $(window).resize(function() {
@@ -32,8 +32,11 @@ function mousePressed() {
 	else {
 		console.log(mouseX)
 		const btn = $("#buttons");
+		const soc = $("social-icons");
 		if (!(btn.position().left < mouseX && btn.position().left + btn.width() > mouseX
-			&& btn.position().top < mouseY && btn.position().top + btn.height() > mouseY)) {
+			&& btn.position().top < mouseY && btn.position().top + btn.height() > mouseY) &&
+			!(soc.position().left < mouseX && soc.position().left + soc.width() > mouseX
+			&& soc.position().top < mouseY && soc.position().top + soc.height() > mouseY)) {
 			snake.start();
 		}
 	}
