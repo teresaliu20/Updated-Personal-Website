@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
     var options = {
-	 	strings: ["", "ENGINEER. ARTIST. DEVELOPER."],
+	 	strings: ["", "Engineer. Artist. Developer."],
 	 	typeSpeed: 50,
 	}
 	$('#email-button').on('click', function() {
